@@ -24,9 +24,14 @@ Expected OUTPUT for this sample:
   ['Bran Stark', 'Arya Stark', 'Sansa Stark']
 
 */
-
 function keepStarks(names) {
+  const result = names.filter(function (actualName) {
+    return actualName.split(' ')[1] === "Stark"
+  })
+  return result
 }
+
+
 
 // DON'T TOUCH THIS!
 module.exports = keepStarks;

@@ -12,9 +12,16 @@ Expected OUTPUT for this sample:
   [7, 2, 0, 3, 11]
 
 */
+function isValidNumbers(numbers) {
+  return numbers >= 0
+}
 
 function getPositiveNumbers(numbers) {
+  const result = numbers.filter(isValidNumbers)
+  return result
 }
+
+console.log(getPositiveNumbers([-2, -1, 0, 1, 2]))
 
 // If you need, you can always visualize the result with a console.log.
 // In that case, uncomment the line below (you can also add your own
